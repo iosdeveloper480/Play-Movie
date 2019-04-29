@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Kingfisher (5.3.1)
+  - Realm (3.14.1):
+    - Realm/Headers (= 3.14.1)
+  - Realm/Headers (3.14.1)
+  - RealmSwift (3.14.1):
+    - Realm (= 3.14.1)
+  - SwiftyJSON (4.3.0)
+  - XCDYouTubeKit (2.7.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - Realm
+  - RealmSwift
+  - SwiftyJSON
+  - XCDYouTubeKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
+  RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
+
+PODFILE CHECKSUM: 1423a483bd5325e34ac39f7ddf015497da9f72b7
+
+COCOAPODS: 1.6.1

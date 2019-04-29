@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SyncAlertView" customModule="Mrep" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crS-gF-Anz" customClass="WACircleRotatingLoaderView" customModule="Mrep" customModuleProvider="target">
+                    <rect key="frame" x="113.5" y="8" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="XCW-J9-bUR"/>
+                        <constraint firstAttribute="height" constant="60" id="xCE-vW-9mP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synchronizing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-59-Zj9">
+                    <rect key="frame" x="81" y="76" width="124.5" height="23.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23.5" id="NuV-RW-keF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synchronization completed successfully." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6s-yT-Cre">
+                    <rect key="frame" x="8" y="107" width="271" height="16.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-Cs-XtC" customClass="WAButton" customModule="Mrep" customModuleProvider="target">
+                    <rect key="frame" x="118" y="132" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="frI-qz-zTJ"/>
+                        <constraint firstAttribute="width" constant="50" id="ldd-js-cta"/>
+                    </constraints>
+                    <state key="normal" title="Ok">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="y6w-59-Zj9" firstAttribute="top" secondItem="crS-gF-Anz" secondAttribute="bottom" constant="8" id="3AU-Gz-FOv"/>
+                <constraint firstItem="N6s-yT-Cre" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="MSw-sO-85C"/>
+                <constraint firstAttribute="trailing" secondItem="N6s-yT-Cre" secondAttribute="trailing" constant="8" id="OQC-D1-R8e"/>
+                <constraint firstAttribute="bottom" secondItem="yhp-Cs-XtC" secondAttribute="bottom" constant="8" id="ZWN-fg-geW"/>
+                <constraint firstItem="crS-gF-Anz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="cgf-8y-ctz"/>
+                <constraint firstItem="y6w-59-Zj9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cyx-Qi-756"/>
+                <constraint firstItem="N6s-yT-Cre" firstAttribute="top" secondItem="y6w-59-Zj9" secondAttribute="bottom" constant="8" id="jpy-GK-Fv2"/>
+                <constraint firstItem="yhp-Cs-XtC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t45-bm-zdf"/>
+                <constraint firstItem="crS-gF-Anz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="txN-XQ-tdr"/>
+                <constraint firstItem="yhp-Cs-XtC" firstAttribute="top" secondItem="N6s-yT-Cre" secondAttribute="bottom" constant="8" id="zxj-tU-ais"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-82.5" y="-177"/>
+        </view>
+    </objects>
+</document>

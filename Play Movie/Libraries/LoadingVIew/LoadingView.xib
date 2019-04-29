@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="Find_FIT" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="yt6-SM-ooe" id="Pbw-yt-LEa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yt6-SM-ooe">
+                    <rect key="frame" x="10" y="20" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="FLX-Qg-Ctu">
+                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="20" id="gBC-p0-KMI">
+                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                        </constraint>
+                    </constraints>
+                    <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-dA-qGI">
+                    <rect key="frame" x="40" y="21" width="73.5" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.25415382922535212" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yt6-SM-ooe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Kn8-sd-Irq"/>
+                <constraint firstItem="oWE-dA-qGI" firstAttribute="leading" secondItem="yt6-SM-ooe" secondAttribute="trailing" constant="10" id="Ks3-yP-fi6">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="yt6-SM-ooe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VzH-oq-5tZ">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="oWE-dA-qGI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sE1-HS-mGj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-129" y="-232"/>
+        </view>
+        <viewController id="p5w-GA-wj9" customClass="LoadingVC" customModule="Find_FIT" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="h2f-gF-CUW"/>
+                <viewControllerLayoutGuide type="bottom" id="NCh-0N-3yI"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="hFt-tr-zjH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFK-u2-lJ2">
+                        <rect key="frame" x="40" y="257" width="295" height="153.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75E-Ua-K6X">
+                                <rect key="frame" x="8" y="124" width="279" height="17.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="SYNCHRONIZING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B55-hl-5Ft">
+                                <rect key="frame" x="8" y="104" width="279" height="20"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-cr-1NE" customClass="SpinnerView" customModule="Find_FIT" customModuleProvider="target">
+                                <rect key="frame" x="107.5" y="16" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3Rc-vg-4dM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="80" id="EEz-jh-mQ9">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Jy-cr-1NE" firstAttribute="top" secondItem="KFK-u2-lJ2" secondAttribute="top" constant="16" id="8gp-vz-ke9">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="B55-hl-5Ft" secondAttribute="trailing" constant="8" id="B2I-G7-Ey3">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="B55-hl-5Ft" firstAttribute="top" secondItem="6Jy-cr-1NE" secondAttribute="bottom" constant="8" id="GU7-Fi-kMO">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="75E-Ua-K6X" secondAttribute="bottom" constant="12" id="JgG-kA-ty6">
+                                <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="75E-Ua-K6X" firstAttribute="leading" secondItem="KFK-u2-lJ2" secondAttribute="leading" constant="8" id="Ucn-Jo-sPu">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="75E-Ua-K6X" secondAttribute="trailing" constant="8" id="ny4-RU-NFQ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="6Jy-cr-1NE" firstAttribute="centerX" secondItem="KFK-u2-lJ2" secondAttribute="centerX" id="rpr-tL-lSR"/>
+                            <constraint firstItem="B55-hl-5Ft" firstAttribute="leading" secondItem="KFK-u2-lJ2" secondAttribute="leading" constant="8" id="uaS-3M-6Rd">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="75E-Ua-K6X" firstAttribute="top" secondItem="B55-hl-5Ft" secondAttribute="bottom" id="vIQ-eP-Hj5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="0.382262323943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="KFK-u2-lJ2" firstAttribute="leading" secondItem="hFt-tr-zjH" secondAttribute="leading" constant="40" id="XFa-Hb-nb5"/>
+                    <constraint firstItem="KFK-u2-lJ2" firstAttribute="centerY" secondItem="hFt-tr-zjH" secondAttribute="centerY" id="ePt-eC-Bu8"/>
+                    <constraint firstAttribute="trailing" secondItem="KFK-u2-lJ2" secondAttribute="trailing" constant="40" id="nFI-yW-wuR"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="textLabel" destination="75E-Ua-K6X" id="cPj-cv-iDl"/>
+            </connections>
+            <point key="canvasLocation" x="-924" y="-126"/>
+        </viewController>
+    </objects>
+</document>
